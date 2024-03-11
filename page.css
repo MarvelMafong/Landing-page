@@ -1,0 +1,117 @@
+body{
+    font-family: 'poppins',sans-serrif;
+    font-size: 20;
+}
+
+.placeholder{
+    text-align:center ;
+    position: absolute;
+    top: 0%;
+    bottom: 40%;
+    right: 0%;
+    left: 10%;
+    font-size: 100px;
+    padding: 16px;
+    border-radius: 5px;
+    color: #aaa;
+}
+.search-form::before {
+    content: url('search-icon.png'); /* Path to your search symbol image */
+    display: inline-block;
+    width: 20px; /* Adjust the width of the search symbol */
+    height: 20px; /* Adjust the height of the search symbol */
+    margin-right: 5px; /* Adjust the spacing between the search symbol and the input field */
+  }
+  .search-form {
+    display: inline-block; /* Ensure the form and button are displayed inline */
+  }
+  
+  #searchButton {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 8px 16px; /* Adjust padding as needed */
+    cursor: pointer;
+    top: 20%;
+  }
+  
+  #searchButton:hover {
+    background-color: #0056b3; /* Hover color */
+  }
+  
+.nav ul{
+    max-width: var(--max-width);
+    margin-right: 200px;/*increase the spacing between navigation links*/
+   
+    line-height: 100px; 
+    align-items: center;
+    justify-content: space-between;
+    float: right;
+}  
+nav ul li{
+    display:inline-block;
+    list-style-type: none;
+    text-transform: capitalize;
+    border-radius: 5px;
+    padding: 0px 5px;
+
+ }     
+nav ul li:last-child{
+ margin-right: 0;/*Remove  right marign from the last list item*/
+}
+
+.nav ul li a{
+    font-size: 4.5rem;
+    font-weight: 500;
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-right: 20px;/*space for the arrow*/
+}
+nav ul li a:hover{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    background-color: rgb(221, 209, 209);
+}
+
+
+nav ul li a:right{
+    content: '';/*Arrow character*/
+    background-color: transparent;
+    padding: 10px;
+    font-size: 30;
+    position: absolute;
+    transform: translateY(-50%);
+}
+.horizontal-text{
+    display: inline-block;
+    transform: rotate(0deg);/*rotate the text counter clockwise*/
+    margin-right: 60px;
+    font-weight: bold;
+
+    }
+    input[type="text"] {
+        padding: 10px;
+        border: none;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+      }
+      
+      button[type="submit"] {
+        padding: 10px 15px;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        background-color: transparent;
+        color: transparent;
+        cursor: pointer;
+      }
+      
+      button[type="submit"]:hover {
+        background-color: #cbd4dd;
+      }
+      
+
+
+    
